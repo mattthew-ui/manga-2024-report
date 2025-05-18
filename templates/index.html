@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="stely.css">
 </head>
 <style>
-
+    *{
+        padding: 0;
+        margin: 0;
+    }
 </style>
 <body>
-    <nav>
+    <nav id="navagtion" class="nav-bar">
         <ul>
             <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('index') }}">The Awards</a></li>
-            <li><a href="{{ url_for('index') }}">The Manga Numbers</a></li>
+            <li><a href="{{ url_for('The_Awards') }}">The Awards</a></li>
+            <li><a href="{{ url_for('The_numbers') }}">The Manga Numbers</a></li>
         </ul>
     </nav>
+    <h1>Home</h1>
 </body>
 <script>
     
