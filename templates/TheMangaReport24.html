@@ -6,22 +6,21 @@
     <title>The Manga Report 2024</title>
 
 </head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+</style>
 <body>
     <nav id="navagtion" class="nav-bar">
-        <div>
-            <ul>
-                <li class="nav-item">
-                    <a class="" href="index.html">home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="" href="TheMangaReport24.html">the report</a>
-                </li>
-                <li class="nav-item">
-                    <a class="" href="TheAwards.html">The Awards</a>
-                </li>
-            </ul> 
-        </div>   
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('The_Awards') }}">The Awards</a></li>
+            <li><a href="{{ url_for('The_numbers') }}">The Manga Numbers</a></li>
+        </ul>
     </nav>
+    <h1>The Numbers</h1>
 </body>
 <script>
     

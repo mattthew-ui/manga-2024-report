@@ -26,3 +26,7 @@ def The_Awards():
 @app.route('/The_numbers')
 def The_numbers():
     return render_template('TheMangaReport24.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
