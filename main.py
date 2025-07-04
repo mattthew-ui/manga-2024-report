@@ -27,6 +27,10 @@ def The_Awards():
 def The_numbers():
     return render_template('TheMangaReport24.html')
 
+@app.route('/Additions')
+def Additions():
+    return render_template('Additions.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
