@@ -7,18 +7,58 @@
     <link rel="stylesheet" href="stely.css">
 </head>
 <style>
-    *{
-        padding: 0;
+    * {
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
     }
-     h1{
+
+    body {
+        background-color: #f4f4f4;
+    }
+
+    
+    nav {
+        width: 100%;
+        background-color: #222;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 40px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #ffcc00;
+        text-decoration: underline;
+    }
+
+    
+    h1, h3 {
         text-align: center;
-    } 
-    h3{
-        text-align: center;
+        margin-top: 25px;
+    }
+
+  
+    p {
+        max-width: 900px;
+        margin: 25px auto;
+        font-size: 1.1em;
+        line-height: 1.5;
     }
 </style>
-<body>
     <nav id="navagtion" class="nav-bar">
         <ul>
             <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -29,6 +69,7 @@
     </nav>
     <h1>Welcome To My Manga Colltion</h1>
     <h3>What is This Page About</h3>
+    <p>This page was made as a small side porject for me to do for fun i what to make a littel website out of somthing i do every year so i made it off my yearly manga report. my yearly manga report is where i count the amount of manga </p>
 
 </body>
 <script>
